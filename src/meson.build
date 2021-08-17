@@ -30,7 +30,7 @@ sources = files(
     'Utils/Networking.vala',
     'Utils/JsonManager.vala',
     'Utils/FileManager.vala',
-    'Utils/SchemaManager.vala',
+    'Utils/WallpaperManager.vala',
     'Utils/MultiWallpaper.vala',
     'Utils/XMLBackground.vala',
 

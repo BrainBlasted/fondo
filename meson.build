@@ -25,13 +25,17 @@ dependencies = [
     dependency('gtk+-3.0'),
     dependency('json-glib-1.0'),
     dependency('libsoup-2.4'),
+    dependency('libportal'),
     meson.get_compiler('vala').find_library('posix'),
 ]
+
+vala_args = [ '--vapidir=@0@'.format(join_paths(meson.source_root(), 'src')) ]
 
 executable(
     meson.project_name(),
     sources,
     asresources,
+    vala_args: vala_args,
     dependencies: dependencies,
     install: true
 )

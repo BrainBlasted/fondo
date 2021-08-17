@@ -154,8 +154,8 @@ namespace App.Utils {
             Method to update GSetting properties
         ***********************************************************************/
         public void set_wallpaper (string picture_options = "zoom") {
-            var schemaManager = new SchemaManager();
-            schemaManager.set_wallpaper (this.full_picture_path, picture_options);
+            var wallpaperManager = new WallpaperManager();
+            wallpaperManager.set_wallpaper.begin (this.full_picture_path, picture_options);
         }
 
         /***********************************************************************

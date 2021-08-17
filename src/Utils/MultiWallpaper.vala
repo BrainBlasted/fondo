@@ -72,9 +72,9 @@ namespace App.Utils {
             if (!background_file.query_exists ()) {
                 Wallpaper.show_message ("Error", "XML Background error on generation", "dialog-error");
             } else {
-                var schemaManager = new SchemaManager();
+                var wallpaperManager = new WallpaperManager ();
                 string background_path = background_file.get_path();
-                schemaManager.set_wallpaper (background_path, picture_options);
+                wallpaperManager.set_wallpaper.begin (background_path, picture_options);
                 print("Seteado!");
             }
         }
